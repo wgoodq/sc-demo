@@ -38,6 +38,8 @@ ext {
 dependencies {
     // 注册中心的依赖
     compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-server')
+    // 配置中心的依赖
+    compile('org.springframework.cloud:spring-cloud-config-server')
 }
 
 dependencyManagement {
