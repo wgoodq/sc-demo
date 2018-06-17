@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: Eureka_Config_Server
+  profiles:
+    # 默认配置文件
+    active: peer1
+eureka:
+  instance:
+    # 启用 IP 偏好模式
+    prefer-ip-address: true
+logging:
+  level:
+    root: warn
+    cn.ok.ecs: info
