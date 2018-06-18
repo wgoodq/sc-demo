@@ -39,8 +39,12 @@ ext {
 dependencies {
     // 服务接口依赖
     compile('org.springframework.boot:spring-boot-starter-web')
+    // 配置中心客户端依赖
+    compile('org.springframework.cloud:spring-cloud-starter-config')
     // Eureka 客户端依赖
     compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-client')
+    // 触发本应用重新获取配置中心的配置信息
+    compile('org.springframework.boot:spring-boot-starter-actuator')
     compileOnly('org.projectlombok:lombok')
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
